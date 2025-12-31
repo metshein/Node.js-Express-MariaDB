@@ -1,13 +1,6 @@
-
-//Tavaline javaskript kood
-let nimi = "maailm";
-console.log("Tere, " + nimi + "!");
-
-let tervitus = (nimi) => {
-    return "Tere, " + nimi + "!";
-}
-
-console.log(tervitus("Eesti"));
-console.log(tervitus(nimi));
-
-// Globaalsed objektid
+const nimi = process.argv[2]; 
+if (!nimi) { 
+    console.log("Palun sisesta nimi"); 
+} else { 
+    console.log("Tere", nimi);
+ }
