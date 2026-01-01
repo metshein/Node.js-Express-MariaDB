@@ -10,7 +10,14 @@ const server = http.createServer((req, res) => {
         filePath = './views/index.html';
      } else if (req.url === '/teenused') {
         filePath = './views/teenused.html';
-    } else { filePath = './views/404.html'; }
+    }else if (req.url === '/vana_leht') {
+        res.statusCode = 301;
+        res.setHeader('Location', '/');
+        res.end();
+    } else { 
+        res.statusCode = 404;
+        filePath = './views/404.html'; 
+    }
 
     fs.readFile(filePath, (err, data) => {
         if (err) {

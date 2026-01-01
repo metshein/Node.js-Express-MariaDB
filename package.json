@@ -1,0 +1,31 @@
+{
+  "name": "nodealused",
+  "version": "1.0.0",
+  "description": "Node.js õppimiseks",
+  "keywords": [
+    "node.js",
+    "mysql",
+    "express"
+  ],
+  "homepage": "https://github.com/metshein/Node.js-Express-MariaDB#readme",
+  "bugs": {
+    "url": "https://github.com/metshein/Node.js-Express-MariaDB/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metshein/Node.js-Express-MariaDB.git"
+  },
+  "license": "ISC",
+  "author": "Mario Metshein",
+  "type": "commonjs",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
+  }
+}
